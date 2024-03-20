@@ -23,7 +23,7 @@ def load_chat_model():
     # parameters for ollama see: https://api.python.langchain.com/en/latest/chat_models/langchain_community.chat_models.ollama.ChatOllama.html
     # num_ctx is the context window size
     return ChatOllama(
-        model="mistral:latest", 
+        model="tinyllama:latest", 
         num_ctx=18192, 
         base_url=st.secrets['OLLAMA_ENDPOINT']
     )
